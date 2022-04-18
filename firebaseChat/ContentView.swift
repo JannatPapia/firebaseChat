@@ -18,7 +18,7 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 
-                VStack{
+                VStack(spacing: 16) {
                 Picker(selection: $isLoginMode, label: Text("Picker here")){
                     Text("Login")
                         .tag(true)
@@ -26,21 +26,24 @@ struct ContentView: View {
                         .tag(false)
                 }
                 .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                
-                
-                Button {
+             //   .padding()
                     
-                }label: {
-                    Image(systemName: "person.fill")
-                        .font(.system(size: 64))
-                }
-                
+                    if isLoginMode {
+                        Button {
+                            
+                        }label: {
+                            Image(systemName: "person.fill")
+                                .font(.system(size: 64))
+                                .padding()
+                        }
+                    }
                 //Use two tet filed
-                TextField("email", text: $email)
+                TextField("Email", text: $email)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
           //      TextField("password", text: $password)
                     //password is secure so i use securefiled
-                    SecureField("password", text: $password)
+                    SecureField("Password", text: $password)
                 
                 Button {
                     
@@ -57,7 +60,7 @@ struct ContentView: View {
 //                Text("Here is my creation account page")
             }
             }.padding()
-            .navigationTitle("Create Account")
+                .navigationTitle(isLoginMode ? "Log in" : "Create Account")
         }
     }
 }
