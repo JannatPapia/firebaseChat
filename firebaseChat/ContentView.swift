@@ -17,6 +17,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                
+                VStack{
                 Picker(selection: $isLoginMode, label: Text("Picker here")){
                     Text("Login")
                         .tag(true)
@@ -36,10 +38,25 @@ struct ContentView: View {
                 
                 //Use two tet filed
                 TextField("email", text: $email)
-                TextField("password", text: $password)
+          //      TextField("password", text: $password)
+                    //password is secure so i use securefiled
+                    SecureField("password", text: $password)
                 
-                Text("Here is my creation account page")
+                Button {
+                    
+                } label: {
+                    HStack{
+                        Spacer()
+                        Text("Create Account")
+                            .foregroundColor(.white)
+                            .padding(.vertical, 10)
+                            Spacer()
+                    }.background(Color.blue)
+                }
+                
+//                Text("Here is my creation account page")
             }
+            }.padding()
             .navigationTitle("Create Account")
         }
     }
