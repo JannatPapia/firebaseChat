@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State var isLoginMode: Bool = false
+    @State var email = ""
+    @State var password = ""
+    
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -29,6 +34,9 @@ struct ContentView: View {
                         .font(.system(size: 64))
                 }
                 
+                //Use two tet filed
+                TextField("email", text: $email)
+                TextField("password", text: $password)
                 
                 Text("Here is my creation account page")
             }
