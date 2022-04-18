@@ -22,6 +22,14 @@ struct ContentView: View {
                 .padding()
                 
                 
+                Button {
+                    
+                }label: {
+                    Image(systemName: "person.fill")
+                        .font(.system(size: 64))
+                }
+                
+                
                 Text("Here is my creation account page")
             }
             .navigationTitle("Create Account")
