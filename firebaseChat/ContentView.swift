@@ -28,7 +28,7 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
              //   .padding()
                     
-                    if isLoginMode {
+                    if !isLoginMode {
                         Button {
                             
                         }label: {
@@ -37,30 +37,48 @@ struct ContentView: View {
                                 .padding()
                         }
                     }
+                    
+                    //MARK: use group for two textfield
+                    Group {
+                        TextField("Email", text: $email)
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
+                        SecureField("Password", text: $password)
+                    }
+                    .padding(12)
+                    .background(Color.white)
                 //Use two tet filed
-                TextField("Email", text: $email)
-                        .keyboardType(.emailAddress)
-                        .autocapitalization(.none)
-          //      TextField("password", text: $password)
-                    //password is secure so i use securefiled
-                    SecureField("Password", text: $password)
+//                TextField("Email", text: $email)
+//                        .keyboardType(.emailAddress)
+//                        .autocapitalization(.none)
+//                        .padding(12)
+//                        .background(Color.white)
+//          //      TextField("password", text: $password)
+//                    //password is secure so i use securefiled
+//                    SecureField("Password", text: $password)
+//                        .padding(12)
+//                        .background(Color.white)
                 
                 Button {
                     
                 } label: {
                     HStack{
                         Spacer()
-                        Text("Create Account")
+                        Text(isLoginMode ? "Log in" : "Create Account")
                             .foregroundColor(.white)
                             .padding(.vertical, 10)
+                            .font(.system(size: 14, weight: .semibold))
                             Spacer()
-                    }.background(Color.blue)
+                    }.background(Color.green)
                 }
                 
 //                Text("Here is my creation account page")
             }
-            }.padding()
+                .padding()
+            }
                 .navigationTitle(isLoginMode ? "Log in" : "Create Account")
+                .background(Color(.init(white: 0, alpha: 0.05))
+                                .ignoresSafeArea())
         }
     }
 }
