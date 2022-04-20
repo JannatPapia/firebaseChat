@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C52166528106E1B0080096E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C52166428106E1B0080096E /* ContentView.swift */; };
+		5C5216672810722F0080096E /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5216662810722F0080096E /* ChatRow.swift */; };
 		5CE3D6A4280CA76200B6CD93 /* firebaseChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3D6A3280CA76200B6CD93 /* firebaseChatApp.swift */; };
 		5CE3D6A6280CA76200B6CD93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3D6A5280CA76200B6CD93 /* LoginView.swift */; };
 		5CE3D6A8280CA76500B6CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3D6A7280CA76500B6CD93 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		5C52166428106E1B0080096E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C5216662810722F0080096E /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 		5CE3D6A0280CA76200B6CD93 /* firebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE3D6A3280CA76200B6CD93 /* firebaseChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseChatApp.swift; sourceTree = "<group>"; };
 		5CE3D6A5280CA76200B6CD93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				5C52166428106E1B0080096E /* ContentView.swift */,
+				5C5216662810722F0080096E /* ChatRow.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C5216672810722F0080096E /* ChatRow.swift in Sources */,
 				5CE3D6A6280CA76200B6CD93 /* LoginView.swift in Sources */,
 				5CE3D6A4280CA76200B6CD93 /* firebaseChatApp.swift in Sources */,
 				5C52166528106E1B0080096E /* ContentView.swift in Sources */,
