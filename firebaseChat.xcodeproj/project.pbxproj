@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C52166528106E1B0080096E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C52166428106E1B0080096E /* ContentView.swift */; };
 		5CE3D6A4280CA76200B6CD93 /* firebaseChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3D6A3280CA76200B6CD93 /* firebaseChatApp.swift */; };
 		5CE3D6A6280CA76200B6CD93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3D6A5280CA76200B6CD93 /* LoginView.swift */; };
 		5CE3D6A8280CA76500B6CD93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3D6A7280CA76500B6CD93 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C52166428106E1B0080096E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CE3D6A0280CA76200B6CD93 /* firebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE3D6A3280CA76200B6CD93 /* firebaseChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseChatApp.swift; sourceTree = "<group>"; };
 		5CE3D6A5280CA76200B6CD93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C52166328106DF40080096E /* ChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				5C52166428106E1B0080096E /* ContentView.swift */,
+			);
+			path = ChatApp;
+			sourceTree = "<group>";
+		};
 		5CE3D697280CA76200B6CD93 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		5CE3D6A2280CA76200B6CD93 /* firebaseChat */ = {
 			isa = PBXGroup;
 			children = (
+				5C52166328106DF40080096E /* ChatApp */,
 				5CE3D6A3280CA76200B6CD93 /* firebaseChatApp.swift */,
 				5CE3D6A5280CA76200B6CD93 /* LoginView.swift */,
 				5CE3D6A7280CA76500B6CD93 /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				5CE3D6A6280CA76200B6CD93 /* LoginView.swift in Sources */,
 				5CE3D6A4280CA76200B6CD93 /* firebaseChatApp.swift in Sources */,
+				5C52166528106E1B0080096E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
